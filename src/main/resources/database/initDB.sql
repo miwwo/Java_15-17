@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS teachers
+(
+    id SERIAL NOT NULL PRIMARY KEY ,
+    first_name VARCHAR(128) NOT NULL,
+    second_name VARCHAR(128) NOT NULL,
+    subject VARCHAR(128) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS students
+(
+    id SERIAL NOT NULL PRIMARY KEY,
+    first_name VARCHAR(128) NOT NULL ,
+    second_name VARCHAR(128) NOT NULL,
+    teacher_id INTEGER NOT NULL
+);

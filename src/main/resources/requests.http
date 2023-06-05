@@ -1,0 +1,52 @@
+###
+POST http://localhost:8080/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Vladimir",
+  "lastName": "Petrovich",
+  "subject": "math"
+}
+
+###
+POST http://localhost:8080/teachers
+Content-Type: application/json
+
+{
+  "firstName": "Petr",
+  "lastName": "Dmitrivich",
+  "subject": "SIAOD"
+}
+
+###
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "firstName": "Nikita",
+  "lastName": "Ivanov",
+  "teacherID": 1
+}
+
+###
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "firstName": "Ivan",
+  "lastName": "Nikitin",
+  "teacherID": 1
+}
+
+###
+GET http://localhost:8080/teachers/1
+
+
+###
+GET http://localhost:8080/teachers/subject/math
+
+###
+#GET http://localhost:8080/students
+#
+####
+#GET http://localhost:8080/students/1
